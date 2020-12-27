@@ -5,7 +5,7 @@
   /*   border: solid; */
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to top, red, black);
+    /* background-image: linear-gradient(to top, red, black); */
   }
   .ww-nav {
     width: 50%; 
@@ -46,7 +46,7 @@
   
   /* //// SECTION-THE STORY //// */
   .ww-the-story {
-    background-image: linear-gradient(to top, #eddab2, #fff);
+    /* background-image: linear-gradient(to top, #eddab2, #fff); */
   }
   .ww-section-heading {
     text-align: center;
@@ -70,7 +70,7 @@
   .ww-cards-main-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
-    background: #35654d; 
+    /* background: #35654d;  */
   }  
   .single-card-container {
     margin: 25px;
@@ -165,7 +165,7 @@
   
   
   p {
-    color: white;
+    
     margin: 0p;
     padding: 0px;
   }

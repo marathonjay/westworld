@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+  //////* CARD FLIP *////
   let cardClick = document.querySelectorAll(".single-card-container");
 
 function flipCard(event) {
@@ -12,7 +13,6 @@ function flipCard(event) {
     }
   }  
 };
-
 for (i = 0; i < cardClick.length; i++) {
   cardClick[i].addEventListener("click", flipCard);
   // console.log(i);
@@ -23,18 +23,15 @@ for (i = 0; i < cardClick.length; i++) {
 
 var audio = new Audio("https://res.cloudinary.com/jasonp/video/upload/v1609020934/01_-_Main_Title_Theme_-_Westworld_wexm7z.mp3");
 audio.play();
-
 document.querySelector(".audioPlay").addEventListener("click", function() {
   audio.play();
 });
   // console.log(audio.currentTime);
 
-
 document.querySelector(".audioPause").addEventListener("click", function() {
   audio.pause();
   // console.log(audio.currentTime);
 } );
-
 
 document.querySelector(".audioStop").addEventListener("click", function() {
   audio.pause();
@@ -43,4 +40,11 @@ document.querySelector(".audioStop").addEventListener("click", function() {
 } );
 
 
-})
+
+
+
+
+
+
+
+}) //////* END OF DOM CONTENT LOADED EVENT *////
