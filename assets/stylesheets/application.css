@@ -127,7 +127,6 @@
     background-image: url("../../assets/images/card-robert-ford.jpg");
   }
 
-
   .rotate-forward {
     transform: rotateY(180deg);
   }
@@ -136,18 +135,12 @@
   }
   
   
-  
   .w-container { 
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-  
      
   }
-  
-  
-  
-
   
   .w1 {
     margin: 0px;
@@ -160,9 +153,6 @@
    
   }
   
-  
-  
-  
   .big-w {
   /*   background: blue; */
   /*   border-radius: 50%; */
@@ -172,9 +162,6 @@
   /*   border: solid; */
     align-self: center;
   }
-  
-  
-  
   
   p {
     
@@ -201,5 +188,9 @@
     backface-visibility: hidden;  
   } */
   
+/* //// SECTION-THE MUSIC  //// */
+
+
+
   
    
