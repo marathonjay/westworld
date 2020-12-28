@@ -21,8 +21,8 @@ for (i = 0; i < cardClick.length; i++) {
 
 //////* AUDIO FUNCTIONS *////
 
-var audio = new Audio("https://res.cloudinary.com/jasonp/video/upload/v1609020934/01_-_Main_Title_Theme_-_Westworld_wexm7z.mp3");
-audio.play();
+var audio = new Audio("assets/audio/westworld-main-theme.mp3");
+
 document.querySelector(".audioPlay").addEventListener("click", function() {
   audio.play();
 });
