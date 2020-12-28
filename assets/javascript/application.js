@@ -26,29 +26,60 @@ const blackHoleSun = new Audio("assets/audio/black-hole-sun.mp3");
 const paintItBlack = new Audio("assets/audio/paint-it-black.mp3");
 const heartShapedBox = new Audio("assets/audio/heart-shaped-box.mp3");
 const spaceOddity = new Audio("assets/audio/space-oddity.mp3");
-const houseOfTheRisingSun = new Audio("assets/house-of-the-rising-sun.mp3");
+const houseOfTheRisingSun = new Audio("assets/audio/house-of-the-rising-sun.mp3");
 const nitroHeist = new Audio("assets/audio/nitro-heist.mp3");
 const sweetChildOMine = new Audio("assets/audio/sweet-child-o-mine.mp3");
 
+const music = 
+[westworldTheme, 
+blackHoleSun, 
+paintItBlack, 
+heartShapedBox, 
+spaceOddity, 
+houseOfTheRisingSun, 
+nitroHeist, 
+sweetChildOMine,
+]
+
+console.log(music);
 
 
 
 
-document.querySelector(".audioPlay").addEventListener("click", function() {
-  westworldTheme.play();
-});
-  // console.log(audio.currentTime);
+function audioPlay() {
+  music[0].play();
+};
 
-document.querySelector(".audioPause").addEventListener("click", function() {
-  westworldTheme.pause();
-  // console.log(audio.currentTime);
-} );
 
-document.querySelector(".audioStop").addEventListener("click", function() {
-  westworldTheme.pause();
-  westworldTheme.currentTime = 0;
-  // console.log(audio.currentTime);
-} );
+
+const controlPlay = document.querySelectorAll(".audio-play");
+const controlPause = document.querySelectorAll(".audio-pause");
+const controlStop = document.querySelectorAll(".audio-stop");
+
+
+for (i = 0; i < music.length; i++) {
+  controlPlay[i].addEventListener("click", audioPlay)
+}
+
+
+
+// document.querySelector(".audio-play").addEventListener("click", function() {
+//   music[2].play();
+// });
+//   // console.log(audio.currentTime);
+
+// document.querySelector(".audio-pause").addEventListener("click", function() {
+//   westworldTheme.pause();
+//   // console.log(audio.currentTime);
+// } );
+
+// document.querySelector(".audio-stop").addEventListener("click", function() {
+//   westworldTheme.pause();
+//   westworldTheme.currentTime = 0;
+//   // console.log(audio.currentTime);
+// } );
+
+
 
 
 
