@@ -105,16 +105,34 @@
     background-position: center;
   }
   .card1-image {
-    background-image: url("https://res.cloudinary.com/jasonp/image/upload/v1606700374/95-950191_description-westworld-hbo-photos-wallpaper-from-westworld-dolores_iy1ep6.jpg");
+    background-image: url("../../assets/images/card-dolores.jpg")
   }
   
   .card2-image {
-    background-image: url("https://res.cloudinary.com/jasonp/image/upload/v1608771597/582b2cd6341d7ae3018b4931_i5opgc.jpg");
+    background-image: url("../../assets/images/card-bernard.jpg");
   }
   
   .card3-image {
-    background-image: url("https://res.cloudinary.com/jasonp/image/upload/v1608771614/Maeve_Les_Ecorches_ynoozp.jpg");
+    background-image: url("../../assets/images/card-maeve.jpg");
   }
+  .card4-image {
+    background-image: url("../../assets/images/card-charlotte-hale.jpg")
+  }
+  
+  .card5-image {
+    background-image: url("../../assets/images/card-man-in-black.jpg");
+  }
+  
+  .card6-image {
+    background-image: url("../../assets/images/card-robert-ford.jpg");
+  }
+
+
+
+
+
+
+
   
   .rotate-forward {
     transform: rotateY(180deg);
@@ -135,7 +153,7 @@
   
   
   
-  
+
   
   .w1 {
     margin: 0px;
