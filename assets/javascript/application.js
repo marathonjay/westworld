@@ -41,15 +41,46 @@ nitroHeist,
 sweetChildOMine,
 ]
 
-console.log(music);
 
 
 
 
-function audioPlay() {
-  music[0].play();
+//// PLAY AUDIO ////
+
+function audioPlay(event) {
+  let playClick = event.target.id;
+  for (i = 1; i <= music.length; i ++) { 
+    if (playClick === `song${[i]}-play`) {
+      music[i].play();
+      music[i].setAttribute("id", [i]);   
+    };
+  };
+  
 };
 
+//// PAUSE AUDIO ////
+function audioPause(event) {
+  let playPause = event.target.id;
+  for (i = 1; i <= music.length; i ++) {   
+    if (playPause === `song${[i]}-pause`) {
+      music[i].pause();
+      
+      
+    };
+  };
+};
+
+//// STOP AUDIO ////
+function audioStop(event) {
+  let playStop = event.target.id;
+  for (i = 1; i <= music.length; i ++) {   
+    if (playStop === `song${[i]}-stop`) {
+      music[i].pause();
+      music[i].currentTime = 0;
+      
+    };
+  };
+};
 
 
 const controlPlay = document.querySelectorAll(".audio-play");
@@ -57,9 +88,25 @@ const controlPause = document.querySelectorAll(".audio-pause");
 const controlStop = document.querySelectorAll(".audio-stop");
 
 
-for (i = 0; i < music.length; i++) {
-  controlPlay[i].addEventListener("click", audioPlay)
-}
+for (i = 0; i < controlPlay.length; i++) {
+  controlPlay[i].addEventListener("click", audioPlay);
+};
+
+for (i = 0; i < controlPause.length; i++) {
+  controlPause[i].addEventListener("click", audioPause);
+};
+
+for (i = 0; i < controlStop.length; i++) {
+  controlStop[i].addEventListener("click", audioStop);
+};
+
+
+
+
+
+
+
+
 
 
 
@@ -69,9 +116,9 @@ for (i = 0; i < music.length; i++) {
 //   // console.log(audio.currentTime);
 
 // document.querySelector(".audio-pause").addEventListener("click", function() {
-//   westworldTheme.pause();
-//   // console.log(audio.currentTime);
-// } );
+//   Audio().pause;
+  // console.log(audio.currentTime);
+} );
 
 // document.querySelector(".audio-stop").addEventListener("click", function() {
 //   westworldTheme.pause();
@@ -95,5 +142,4 @@ for (i = 0; i < music.length; i++) {
 
 
 
-
-}) //////* END OF DOM CONTENT LOADED EVENT *////
+//////* END OF DOM CONTENT LOADED EVENT *////
