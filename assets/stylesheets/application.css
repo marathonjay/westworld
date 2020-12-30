@@ -1,5 +1,6 @@
-/* //// HEADER //// */
-
+/* ////////////////////////////
+//// HEADER ////
+///////////////////////////////  */
 .ww-header {
     width: 100%;
   /*   border: solid; */
@@ -16,21 +17,20 @@
     justify-content: center;
     align-items: center; 
   }
-  
   .ww-header-image-container {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center; 
-  /*   border: solid;    */
   }
   .ww-header-image {
     max-width: 50%;
     margin: 100px;
-  }
-  
-  
+  } 
+
+
   /* //// PARALLAX //// */
+
   
   .parallax-image {
     width: 100%;
@@ -44,7 +44,9 @@
   }
   
   
-  /* //// SECTION-THE STORY //// */
+ /* ////////////////////////////
+//// SECTION-THE STORY  ////
+///////////////////////////////  */
   .ww-the-story {
     /* background-image: linear-gradient(to top, #eddab2, #fff); */
   }
@@ -66,7 +68,12 @@
     margin: 0px 0px 0px 20px;
   }
   
-  /* //// SECTION-THE PLAYERS //// */
+  
+  /* ////////////////////////////
+//// SECTION-THE PLAYERS  ////
+///////////////////////////////  */
+
+
   .ww-cards-main-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
@@ -77,10 +84,8 @@
     width: 200px;
     height: 275px;
     perspective: 1000px;
-    cursor: pointer;
-  
-  }
-  
+    cursor: pointer; 
+  } 
   .ww-card {
     width: 200px;
     height: 275px;
@@ -90,8 +95,7 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: .5s linear;
-    box-shadow: 1px 5px 10px;
-    
+    box-shadow: 1px 5px 10px;    
   } 
   .card-front { 
     display: flex;
@@ -106,42 +110,33 @@
   }
   .card1-image {
     background-image: url("../../assets/images/card-dolores.jpg")
-  }
-  
+  } 
   .card2-image {
     background-image: url("../../assets/images/card-bernard.jpg");
-  }
-  
+  } 
   .card3-image {
     background-image: url("../../assets/images/card-maeve.jpg");
   }
   .card4-image {
     background-image: url("../../assets/images/card-charlotte-hale.jpg")
-  }
-  
+  } 
   .card5-image {
     background-image: url("../../assets/images/card-man-in-black.jpg");
-  }
-  
+  } 
   .card6-image {
     background-image: url("../../assets/images/card-robert-ford.jpg");
   }
-
   .rotate-forward {
     transform: rotateY(180deg);
   }
   .rotate-back {
     transform: rotateY(-180deg);
   }
-  
-  
   .w-container { 
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
-     
+   justify-content: space-between;   
   }
-  
   .w1 {
     margin: 0px;
     padding: 5px;
@@ -149,48 +144,86 @@
     height: 40px;
     font-size: 40px;
   /*   border: solid; */
-    text-align: center;
-   
+    text-align: center; 
   }
-  
   .big-w {
-  /*   background: blue; */
-  /*   border-radius: 50%; */
     margin: 0px;
-  /*   padding: 10px; */
     font-size: 80px;
-  /*   border: solid; */
     align-self: center;
   }
-  
   p {
-    
     margin: 0p;
     padding: 0px;
   }
   
-  
-  
-  /* @keyframes flip {
-    0% {
-      transform: rotateX(0) 
-    }
-    100% {
-      transform: rotateX(180deg);
-      background-color: blue;
-    }   
+ /* ////////////////////////////
+//// SECTION-THE MUSIC  ////
+///////////////////////////////  */
+
+.container-music-main {
+  background-image: url("../../assets/images/westworld-piano.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.container-songs {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.song-single {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background: red;
+  border: solid;
+}
+.card-content {
+  background: blue;
+  /* display: inline-block;
+  padding: 20px 100px 20px 100px; */
+}
+.audio-controls {
+  /* display: inline-block; */
+}
+.audio-play, .audio-pause, .audio-stop {
+  /* margin: 0px 15px; */
+}
+.container-composer {
+  max-width: 25%;
+  border: solid;
+  position: relative;
+}
+.container-image-composer {
+  width: 400px;
+  height: 200px;
+  border: solid;
+  margin: auto;
+  margin-top: 50px;
+}
+#image-composer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container-songs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  .card-flip {  
-    transform: rotateX(180deg); 
-    transition-duration: 3s;
-    border: solid; 
-    background-color: blue; 
-    backface-visibility: hidden;  
-  } */
+  .ww-cards-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   
-/* //// SECTION-THE MUSIC  //// */
+}
 
 
 
-  
-   
+
+
+
+
+
+
