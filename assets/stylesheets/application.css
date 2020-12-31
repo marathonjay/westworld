@@ -1,4 +1,15 @@
 /* ////////////////////////////
+//// GLOBAL////
+///////////////////////////////  */
+li {
+  list-style-type: none;
+}
+
+
+
+
+
+/* ////////////////////////////
 //// HEADER ////
 ///////////////////////////////  */
 .ww-header {
@@ -72,11 +83,10 @@
   /* ////////////////////////////
 //// SECTION-THE PLAYERS  ////
 ///////////////////////////////  */
-
-
   .ww-cards-main-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
+    justify-items: center; 
     /* background: #35654d;  */
   }  
   .single-card-container {
@@ -87,8 +97,8 @@
     cursor: pointer; 
   } 
   .ww-card {
-    width: 200px;
-    height: 275px;
+    width: 250px;
+    height: 325px;
     border-radius: 10px;
   /*   border: solid; */
     -moz-backface-visibility: hidden;
@@ -169,19 +179,24 @@
 .container-songs {
   width: 75%;
   display: grid;
+  grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 20px 0px 20px 20px;
+  
 }
 .song-single {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: red;
+  /* background: red; */
   border: solid;
   height: 300px;
+  border-radius: 5px;
+  box-shadow: 1px 5px;
 }
 .card-content {
-  background: blue;
+  background: #fff;
+  border-radius: 5px;
   padding: 20px;
   margin: 20px;
 }
