@@ -170,42 +170,48 @@
   width: 75%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px 0px 20px 20px;
 }
 .song-single {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   background: red;
   border: solid;
+  height: 300px;
 }
 .card-content {
   background: blue;
-  /* display: inline-block;
-  padding: 20px 100px 20px 100px; */
+  padding: 20px;
+  margin: 20px;
 }
-.audio-controls {
-  /* display: inline-block; */
-}
-.audio-play, .audio-pause, .audio-stop {
-  /* margin: 0px 15px; */
-}
+/* .audio-controls {
+  display: inline-block;
+} */
+/* .audio-play, .audio-pause, .audio-stop {
+  margin: 0px 15px;
+} */
 .container-composer {
   max-width: 25%;
-  border: solid;
-  position: relative;
+  margin: 20px 20px 0px 20px;
 }
 .container-image-composer {
-  width: 400px;
+  width: 100%;
   height: 200px;
-  border: solid;
   margin: auto;
-  margin-top: 50px;
 }
 #image-composer {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+
+
+
+/* ////////////////////////////
+//// MOBILE - 768PX ////
+///////////////////////////////  */
 
 @media (max-width: 768px) {
   .container-songs {
