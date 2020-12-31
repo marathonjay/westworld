@@ -1,8 +1,13 @@
 /* ////////////////////////////
 //// GLOBAL////
 ///////////////////////////////  */
-li {
+ul {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  margin: 10px 0px;
 }
 
 
@@ -189,7 +194,7 @@ li {
   justify-content: center;
   align-items: center;
   /* background: red; */
-  border: solid;
+  /* border: solid; */
   height: 300px;
   border-radius: 5px;
   box-shadow: 1px 5px;
