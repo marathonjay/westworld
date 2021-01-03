@@ -82,6 +82,9 @@ li {
   }
   .ww-synopsis {
     margin: 0px 0px 0px 20px;
+    font-size: 18px;
+    width: 75%;
+    line-height: 2.0;
   }
   
   
@@ -102,8 +105,8 @@ li {
     cursor: pointer; 
   } 
   .ww-card {
-    width: 250px;
-    height: 325px;
+    width: 200px;
+    height: 275px;
     border-radius: 10px;
   /*   border: solid; */
     -moz-backface-visibility: hidden;
