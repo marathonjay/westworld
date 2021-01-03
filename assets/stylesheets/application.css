@@ -1,7 +1,7 @@
 /* ////////////////////////////
 //// GLOBAL////
 ///////////////////////////////  */
-ul {
+ul, h2 {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
@@ -15,6 +15,8 @@ p, li  {
 
 button {
   font-family: syncopate;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 
@@ -28,10 +30,11 @@ button {
 ///////////////////////////////  */
 .ww-header {
     width: 100%;
-  /*   border: solid; */
     display: flex;
     align-items: center;
-    /* background-image: linear-gradient(to top, red, black); */
+    padding-bottom: 100px;
+   
+    background-image: linear-gradient(to bottom, red, black);
   }
   .ww-nav {
     width: 50%; 
@@ -41,6 +44,15 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+  }
+  .nav-btn {
+    margin-bottom: 20px;
+    padding: 20px 30px 20px 30px;
+  }
+  .container-nav-btns {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
   }
   .ww-header-image-container {
     width: 50%;
@@ -62,12 +74,12 @@ button {
   
   .parallax-image {
     width: 100%;
-    height: 100px;
-    border: solid;
+    height: 300px;
+    /* border: solid; */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    opacity: .1;
+    /* opacity: .1; */
     background-image: url("../../assets/images/delos-logo1.png");
   }
   
@@ -81,6 +93,8 @@ button {
   .ww-section-heading {
     text-align: center;
     font-family: syncopate;
+    padding: 20px 0px;
+
   }
   
   .dvd-thumbnail {
