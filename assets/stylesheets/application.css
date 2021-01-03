@@ -9,6 +9,15 @@ ul {
 li {
   margin: 10px 0px;
 }
+p, li  {
+  font-family: arimo;
+}
+
+button {
+  font-family: syncopate;
+}
+
+
 
 
 
@@ -43,6 +52,9 @@ li {
     max-width: 50%;
     margin: 100px;
   } 
+  .tagline {
+    font-family: syncopate;
+  }
 
 
   /* //// PARALLAX //// */
@@ -123,6 +135,7 @@ li {
    
     background-color: #fffdd9;   
     position: absolute; 
+    /* border: solid; */
   }  
   .card-back {
     background-size: cover;
@@ -156,20 +169,23 @@ li {
    display: flex;
    flex-direction: column;
    justify-content: space-between;   
+   /* border: solid; */
   }
   .w1 {
     margin: 0px;
     padding: 5px;
     width: 40px;
     height: 40px;
-    font-size: 40px;
-  /*   border: solid; */
+    font-size: 20px;
+    font-family: syncopate;
+    /* border: solid; */
     text-align: center; 
   }
   .big-w {
     margin: 0px;
-    font-size: 80px;
+    font-size: 60px;
     align-self: center;
+    font-family: syncopate;
   }
   p {
     margin: 0p;
@@ -203,6 +219,7 @@ li {
   height: 300px;
   border-radius: 5px;
   box-shadow: 1px 5px;
+  font-family: syncopate;
 }
 .card-content {
   background: #fff;
