@@ -112,6 +112,9 @@ switch (targetBtn) {
   case "music-btn":
     document.querySelector(".ww-the-music").scrollIntoView();
     break;
+  default:
+    document.querySelector(".ww-header").scrollIntoView();
+
 }
 console.log (targetBtn);
 
