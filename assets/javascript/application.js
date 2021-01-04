@@ -41,13 +41,7 @@ nitroHeist,
 sweetChildOMine,
 ]
 
-
-console.log(music.length)
-
-
-
 //// PLAY AUDIO ////
-
 function audioPlay(event) {
   let playClick = event.target.id;
   for (i = 0; i < music.length; i ++) { 
@@ -57,8 +51,7 @@ function audioPlay(event) {
     }
     else  {music[i].play();
     }
-  };
-  
+  };  
 };
 
 //// PAUSE AUDIO ////
@@ -66,10 +59,7 @@ function audioPause(event) {
   let playPause = event.target.id;
   for (i = 0; i <= music.length; i ++) {   
     if (playPause === `song${[i + 1]}-pause`) {
-      music[i].pause();
-      
-      
-      
+      music[i].pause();     
     };
   };
 };
@@ -80,12 +70,11 @@ function audioStop(event) {
   for (i = 0; i <= music.length; i ++) {   
     if (playStop === `song${[i + 1]}-stop`) {
       music[i].pause();
-      music[i].currentTime = 0;
-      
+      music[i].currentTime = 0;    
     };
   };
 };
-
+//////*  AUDIO EVENT HANDLERS *////////
 
 const controlPlay = document.querySelectorAll(".audio-play");
 const controlPause = document.querySelectorAll(".audio-pause");
@@ -108,32 +97,37 @@ for (i = 0; i < controlStop.length; i++) {
 
 
 
+/////*  SCROLL INTO VIEW *////////
+
+
+function scrollIt(event) {
+let targetBtn = event.target.id;
+switch (targetBtn) {
+  case "seasons-btn":
+    document.querySelector(".ww-the-story").scrollIntoView();
+    break;
+  case "players-btn":
+    document.querySelector(".ww-the-players").scrollIntoView();
+    break;
+  case "music-btn":
+    document.querySelector(".ww-the-music").scrollIntoView();
+    break;
+}
+console.log (targetBtn);
+
+};
 
 
 
 
 
 
+let navBtns = document.querySelectorAll(".nav-btn");
+console.log(navBtns)
 
-// document.querySelector(".audio-play").addEventListener("click", function() {
-//   music[2].play();
-// });
-//   // console.log(audio.currentTime);
-
-// document.querySelector(".audio-pause").addEventListener("click", function() {
-//   Audio().pause;
-  // console.log(audio.currentTime);
-
-
-// document.querySelector(".audio-stop").addEventListener("click", function() {
-//   westworldTheme.pause();
-//   westworldTheme.currentTime = 0;
-//   // console.log(audio.currentTime);
-// } );
-
-
-
-
+for (i = 0; i < navBtns.length; i ++) {
+  navBtns[i].addEventListener("click", scrollIt);
+}
 
 
 
