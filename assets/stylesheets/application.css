@@ -385,7 +385,6 @@ html {
   }
   .ww-header-image-container {
     width: 75%;
- 
   }
   #container-card-cast {
     flex-direction: column;
@@ -394,13 +393,11 @@ html {
   #ww-cast-container {
     width: 100%;
     text-align: center;
-    /* border: solid; */
-    
-    
+    /* border: solid; */  
   }
   .ww-cards-main-container {
     width: 100%;
-  
+  }
 }
 
 
