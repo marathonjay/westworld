@@ -9,6 +9,9 @@ ul, h2 {
 li {
   margin: 10px 0px;
 }
+h1, h2, h3 {
+  font-family: syncopate;
+}
 p, li  {
   font-family: arimo;
 }
@@ -29,10 +32,11 @@ html {
   
 } */
 
-.ww-the-story, .ww-the-players, .ww-header, .ww-the-music {
+.ww-header{
   height: 100vh;
   
 }
+
 
 
 
@@ -153,12 +157,36 @@ html {
   /* ////////////////////////////
 //// SECTION-THE PLAYERS  ////
 ///////////////////////////////  */
+#container-card-cast {
+  display: flex;
+
+  /* border: solid; */
+  /* height: 100%; */
+}
   .ww-cards-main-container {
+    /* border: solid; */
+    width: 75%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
     justify-items: center; 
     /* background: #a32d15; */
   }  
+#ww-cast-container {
+  padding: 40px;
+  width: 25%;
+  /* margin: 20px 0px 0px 15px; */
+  /* height: 100%; */
+  border: solid;
+  
+}
+#cast-heading {
+  text-align: center;
+
+}
+/* .cast-name {
+  margin: 0px 0px 20px 35px;
+  
+} */
   .single-card-container {
     margin: 25px;
     width: 200px;
@@ -214,8 +242,8 @@ html {
     /* border: solid; */
   
   }
-  .card1-image {
-    /* background-image: url("../../assets/images/card-dolores.jpg") */
+  /* .card1-image {
+    background-image: url("../../assets/images/card-dolores.jpg")
   } 
   .card2-image {
     background-image: url("../../assets/images/card-bernard.jpg");
@@ -231,7 +259,7 @@ html {
   } 
   .card6-image {
     background-image: url("../../assets/images/card-robert-ford.jpg");
-  }
+  } */
   .rotate-forward {
     transform: rotateY(180deg);
   }
@@ -327,9 +355,9 @@ html {
 ///////////////////////////////  */
 
 @media (max-width: 768px) {
-  .ww-the-players {
+  /* .ww-the-players {
     height: 120vh;
-  }
+  } */
   .parallax-image {
     display: none;
   }
@@ -361,6 +389,19 @@ html {
     width: 75%;
  
   }
+  #container-card-cast {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+  #ww-cast-container {
+    width: 100%;
+    text-align: center;
+    /* border: solid; */
+    
+    
+  }
+  .ww-cards-main-container {
+    width: 100%;
   
 }
 
