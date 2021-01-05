@@ -11,7 +11,6 @@ li {
 }
 p, li  {
   font-family: arimo;
-  
 }
 
 button {
@@ -25,9 +24,14 @@ html {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
-p {
-  margin: 0p;
-  padding: 0px;
+/* p, img {
+  margin: 0px;
+  
+} */
+
+.ww-the-story, .ww-the-players, .ww-header, .ww-the-music {
+  height: 100vh;
+  
 }
 
 
@@ -48,7 +52,7 @@ p {
     display: flex;
     align-items: center;
     padding-bottom: 100px;
-    height: 100vh;
+    /* height: 100vh; */
    
     background-image: linear-gradient(to bottom, red, black);
   }
@@ -90,7 +94,7 @@ p {
   
   .parallax-image {
     width: 100%;
-    height: 600px;
+    height: 100vh; /* was 600px */
     /* border: solid; */
     background-attachment: fixed;
     background-size: cover;
@@ -178,16 +182,40 @@ p {
     justify-content: center;
     align-items: center;
    
-    background: #2a3439;  
+    background: #b5651e;  
     position: absolute; 
     /* border: solid; */
   }  
   .card-back {
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-size: cover;
+    background-position: center; */
+
+  }
+  .card-back-image {
+    width: 80%;
+    height: 75%;
+    object-fit: cover;
+    /* border: solid; */
+   
+  }
+  .card-back-content {
+    /* border: solid; */
+    /* width: 80%;
+    height: 80%; */
+  }
+  .character-name {
+    margin: 0px;
+    padding: 0px 0px 12px 0px;
+    font-weight: 700;
+    /* border: solid; */
+  
   }
   .card1-image {
-    background-image: url("../../assets/images/card-dolores.jpg")
+    /* background-image: url("../../assets/images/card-dolores.jpg") */
   } 
   .card2-image {
     background-image: url("../../assets/images/card-bernard.jpg");
@@ -230,7 +258,7 @@ p {
     object-position: center;
     width: 100%;
     height: 100%;
-    border-radius: 500px;
+    border-radius: 100px;
     
   }
   
@@ -299,6 +327,12 @@ p {
 ///////////////////////////////  */
 
 @media (max-width: 768px) {
+  .ww-the-players {
+    height: 120vh;
+  }
+  .parallax-image {
+    display: none;
+  }
   .container-songs {
     display: grid;
     grid-template-columns: 1fr 1fr;
