@@ -120,11 +120,6 @@ console.log (targetBtn);
 
 };
 
-
-
-
-
-
 let navBtns = document.querySelectorAll(".nav-btn");
 console.log(navBtns)
 

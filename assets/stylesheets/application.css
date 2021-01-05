@@ -48,6 +48,7 @@ p {
     display: flex;
     align-items: center;
     padding-bottom: 100px;
+    height: 100vh;
    
     background-image: linear-gradient(to bottom, red, black);
   }
