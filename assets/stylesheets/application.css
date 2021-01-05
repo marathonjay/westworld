@@ -77,7 +77,7 @@ p {
     align-items: center; 
   }
   .ww-header-image {
-    max-width: 50%;
+    width: 65%;
     margin: 100px;
   } 
   .tagline {
@@ -324,7 +324,7 @@ p {
     justify-content: center;
   }
   .ww-header-image-container {
-    width: 100%;
+    width: 75%;
  
   }
   
