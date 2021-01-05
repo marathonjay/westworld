@@ -353,9 +353,6 @@ html {
 ///////////////////////////////  */
 
 @media (max-width: 768px) {
-  /* .ww-the-players {
-    height: 120vh;
-  } */
   .parallax-image {
     display: none;
   }
@@ -367,17 +364,16 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .parallax-image {
+  /* .parallax-image {
     width: 100%;
     height: 100px;
     background-attachment: local;
     background-size: cover;
     background-position: center;
-    /* opacity: .1; */
+    opacity: .1;
     background-image: url("../../assets/images/delos-logo1.png");
-  }
+  } */
   .ww-header {
-
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
