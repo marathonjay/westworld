@@ -316,6 +316,17 @@ p {
     /* opacity: .1; */
     background-image: url("../../assets/images/delos-logo1.png");
   }
+  .ww-header {
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .ww-header-image-container {
+    width: 100%;
+ 
+  }
   
 }
 
