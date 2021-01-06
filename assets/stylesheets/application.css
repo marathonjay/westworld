@@ -17,6 +17,8 @@ p, li  {
 }
 p {
   line-height: 2.0;
+  /* padding: 0px;
+  margin: 0Px; */
 }
 button {
   font-family: syncopate;
@@ -307,7 +309,7 @@ a {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 20px 0px 20px 20px;
+  /* margin: 20px 0px 20px 20px; */
   
 }
 .song-single {
@@ -324,8 +326,8 @@ a {
 .card-content {
   background: #fff;
   border-radius: 5px;
-  padding: 20px;
-  margin: 20px;
+  /* padding: 10px; */
+  /* margin: 10px; */
 }
 .audio-controls {
   /* display: flex; */
@@ -400,6 +402,70 @@ a {
   .container-songs {
     width: 100%;
     grid-template-columns: 1fr 1fr;
+    /* border: solid; */
+    margin: 0px;
+    /* grid-gap: 0px; */
+    
+  }
+  .container-music-main {
+    flex-direction: column;
+  }
+  .container-composer {
+   max-width: 100%;
+  }
+}
+
+
+@media (max-width: 420px) {
+  .ww-story-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parallax-image {
+    display: none;
+  }
+  .container-songs {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .ww-cards-main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /* .parallax-image {
+    width: 100%;
+    height: 100px;
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+    opacity: .1;
+    background-image: url("../../assets/images/delos-logo1.png");
+  } */
+  .ww-header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .ww-header-image-container {
+    width: 75%;
+  }
+  #container-card-cast {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+  #ww-cast-container {
+    width: 100%;
+    text-align: center;
+    /* border: solid; */  
+  }
+  .ww-cards-main-container {
+    width: 100%;
+  }
+  .container-songs {
+    width: 100%;
+    grid-template-columns: 1fr;
     /* border: solid; */
     margin: 0px;
     /* grid-gap: 0px; */
