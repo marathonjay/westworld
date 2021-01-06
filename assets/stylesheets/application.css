@@ -37,12 +37,18 @@ html {
   text-align: center;
   font-family: syncopate;
   padding: 40px 0px;
-  /* background: radial-gradient(black, red); */
   color: black;
-  
   border-bottom: 5px solid;
-  border-image-source: radial-gradient(black, white);
+  border-image: radial-gradient( black, white);
   border-image-slice: 1;
+  /* theses border properties are for Safari, otherwise all borders were appearing.*/
+  border-top: 0px solid transparent;  
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  
+  
+  
+
 }
 #to-top {
   position: fixed;
