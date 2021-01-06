@@ -24,6 +24,7 @@ button {
   border-radius: 5px;
   background: #2a3439;
   color: white;
+  padding: 5px;
   /* margin-bottom: 20px; */
 }
 html {
@@ -296,9 +297,10 @@ a {
 
 .container-music-main {
   /* background-image: url("../../assets/images/westworld-piano.jpg"); */
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover;
+  background-position: center; */
   display: flex;
+  border: solid;
 }
 .container-songs {
   width: 75%;
@@ -329,7 +331,7 @@ a {
   /* display: flex; */
 }
 .audio-play, .audio-pause, .audio-stop {
-  margin: 10px;
+  margin-bottom: 10px;
 }
 .container-composer {
   max-width: 25%;
@@ -396,15 +398,19 @@ a {
     width: 100%;
   }
   .container-songs {
+    width: 100%;
     grid-template-columns: 1fr 1fr;
-  
+    /* border: solid; */
+    margin: 0px;
+    /* grid-gap: 0px; */
     
   }
   .container-music-main {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .container-composer {
-    max-width: 100%;
+   max-width: 100%;
+  }
 }
 
 
