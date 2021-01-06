@@ -43,6 +43,13 @@ html {
   z-index: +50;
   padding: 15px;
 }
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+ 
+
+}
 
 
 /* ////////////////////////////
@@ -54,8 +61,6 @@ html {
     display: flex;
     align-items: center;
     padding-bottom: 100px;
-    /* height: 100vh; */
-   
     background-image: linear-gradient(to bottom, red, black);
   }
   .ww-nav {
@@ -122,9 +127,9 @@ html {
   .ww-the-story {
     background-image: linear-gradient(to top, #eddab2, #fff);
     border: 1px solid transparent;
-   
-
   }
+  
+  
    
   .dvd-thumbnail {
     width: 200px; 
@@ -144,11 +149,12 @@ html {
     width: 100%;
   }
   .ww-synopsis {
-    padding: 0px 15px;
+    padding: 0px 15px 0px 0px;
     font-size: 16px;
     width: 95%;
     /* line-height: 2.0; */
     font-family: arimo;
+
   }
   
   
