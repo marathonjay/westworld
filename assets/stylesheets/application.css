@@ -37,8 +37,12 @@ html {
   text-align: center;
   font-family: syncopate;
   padding: 40px 0px;
-  background: radial-gradient(black, red);
-  color: white;
+  /* background: radial-gradient(black, red); */
+  color: black;
+  
+  border-bottom: 5px solid;
+  border-image-source: radial-gradient(black, white);
+  border-image-slice: 1;
 }
 #to-top {
   position: fixed;
@@ -53,6 +57,15 @@ a {
   font-size: 14px;
   margin-bottom: 100px;
 }
+body {
+  /* background-image: linear-gradient(to bottom, #eddab2, #fff); */
+}
+
+.ww-the-music, .ww-the-story, .ww-the-players{
+  width: 1200px;
+  margin: auto;
+}
+
 
 
 /* ////////////////////////////
@@ -128,7 +141,7 @@ a {
 //// SECTION-THE STORY  ////
 ///////////////////////////////  */
   .ww-the-story {
-    background-image: linear-gradient(to top, #eddab2, #fff);
+    /* background-image: linear-gradient(to top, #eddab2, #fff); */
     border: 1px solid transparent;
   }
   
@@ -297,6 +310,7 @@ a {
 //// SECTION-THE MUSIC  ////
 ///////////////////////////////  */
 
+
 .container-music-main {
   /* background-image: url("../../assets/images/westworld-piano.jpg"); */
   /* background-size: cover;
@@ -313,6 +327,7 @@ a {
   
 }
 .song-single {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,9 +336,12 @@ a {
   /* height: 300px; */
   border-radius: 5px;
   box-shadow: 1px 5px 10px;
-  font-family: syncopate;
+  /* font-family: syncopate; */
+  border: solid;
 }
 .card-content {
+  width: 75%;
+  border: solid;
   background: #fff;
   border-radius: 5px;
   /* padding: 10px; */
@@ -331,6 +349,7 @@ a {
 }
 .audio-controls {
   /* display: flex; */
+  border: solid;
 }
 .audio-play, .audio-pause, .audio-stop {
   margin-bottom: 10px;
@@ -413,6 +432,11 @@ a {
   .container-composer {
    max-width: 100%;
   }
+  .ww-the-music, .ww-the-story, .ww-the-players {
+    width: 600px;
+    margin: auto;
+  }
+  
 }
 
 
