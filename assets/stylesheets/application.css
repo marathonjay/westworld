@@ -408,11 +408,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .parallax-image {
-    width: 100%;
-    height: 100vh;
-  
-  }
+
   .ww-header {
     display: flex;
     flex-direction: column-reverse;
