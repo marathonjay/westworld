@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
-  //////* CARD FLIP *////
-  let cardClick = document.querySelectorAll(".single-card-container");
+document.addEventListener("DOMContentLoaded", function() { /*-----START OF DOM CONTENT LOADED EVENT----*/
+
+  /*--------------------CARD FLIP------------------------*/
 
 function flipCard(event) {
   let flip = event.currentTarget.id;
@@ -9,17 +9,16 @@ function flipCard(event) {
     if (flip === `card-${[i]}`) {
       document.querySelector(`#front${[i]}`).classList.toggle("rotate-back");
       document.querySelector(`#back${[i]}`).classList.toggle("rotate-forward");
-      // console.log((`#front${[i]}`))
     }
   }  
 };
+
+let cardClick = document.querySelectorAll(".single-card-container");
 for (i = 0; i < cardClick.length; i++) {
   cardClick[i].addEventListener("click", flipCard);
-  // console.log(i);
 };
 
-
-//////* AUDIO FUNCTIONS *////
+/*-------------------AUDIO CONTROLS------------------------*/
 
 const westworldTheme = new Audio("assets/audio/westworld-main-theme.mp3");
 const blackHoleSun = new Audio("assets/audio/black-hole-sun.mp3");
@@ -41,7 +40,8 @@ nitroHeist,
 sweetChildOMine,
 ]
 
-//// PLAY AUDIO ////
+/*--------------------PLAY AUDIO------------------------*/
+
 function audioPlay(event) {
   let playClick = event.target.id;
   for (i = 0; i < music.length; i ++) { 
@@ -54,7 +54,8 @@ function audioPlay(event) {
   };  
 };
 
-//// PAUSE AUDIO ////
+/*--------------------PAUSE AUDIO------------------------*/
+
 function audioPause(event) {
   let playPause = event.target.id;
   for (i = 0; i <= music.length; i ++) {   
@@ -64,7 +65,8 @@ function audioPause(event) {
   };
 };
 
-//// STOP AUDIO ////
+/*--------------------STOP AUDIO------------------------*/
+
 function audioStop(event) {
   let playStop = event.target.id;
   for (i = 0; i <= music.length; i ++) {   
@@ -74,7 +76,8 @@ function audioStop(event) {
     };
   };
 };
-//////*  AUDIO EVENT HANDLERS *////////
+
+/*--------------------AUDIO CONTROL EVENT HANDLERS-----------------------*/
 
 const controlPlay = document.querySelectorAll(".audio-play");
 const controlPause = document.querySelectorAll(".audio-pause");
@@ -94,11 +97,7 @@ for (i = 0; i < controlStop.length; i++) {
   controlStop[i].addEventListener("click", audioStop);
 };
 
-
-
-
-/////*  SCROLL INTO VIEW *////////
-
+/*--------------------SCROLL INTO VIEW------------------------*/
 
 function scrollIt(event) {
 let targetBtn = event.target.id;
@@ -114,29 +113,12 @@ switch (targetBtn) {
     break;
   default:
     document.querySelector(".ww-header").scrollIntoView();
-
-}
-console.log (targetBtn);
-
+  }
 };
 
 let navBtns = document.querySelectorAll(".nav-btn");
-console.log(navBtns)
-
 for (i = 0; i < navBtns.length; i ++) {
   navBtns[i].addEventListener("click", scrollIt);
-}
+};
 
-
-
-
-
-
-
-
-
-
-
-
-
-}); //////* END OF DOM CONTENT LOADED EVENT *////
+}); /*-----END OF DOM CONTENT LOADED EVENT----*/
