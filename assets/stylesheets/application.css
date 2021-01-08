@@ -156,20 +156,14 @@ button, .buy-dvd {
 
 .dvd-thumbnail {
     width: 200px; 
-    /* height: 100%; */
-    /* margin: 15px; */
 }
 
 .story-content {
-   background-image: linear-gradient(to bottom, #eddab2, #fff);
-    /* border: solid; */
-    /* width: 100%; */
-    display: flex; 
-
-    /* align-items: flex-start; */
-    margin: 40px;
-    box-shadow: 1px 5px 10px;
-    border-radius: 5px;
+  background-image: linear-gradient(to bottom, #eddab2, #fff);
+  display: flex; 
+  margin: 40px;
+  box-shadow: 1px 5px 10px;
+  border-radius: 5px;
 }
 
 .season-info {
@@ -412,6 +406,11 @@ footer {
     width: 600px;
   }
 
+  .season-info {
+    justify-content: flex-start;
+  }
+
+
   .container-songs {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -475,6 +474,8 @@ footer {
   .the-music, .the-story, .the-players {
     width: 100%;
   }
+
+  
 
   .story-content {
     flex-direction: column;
