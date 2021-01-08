@@ -82,11 +82,9 @@ function audioStop(event) {
 const controlPlay = document.querySelectorAll(".audio-play");
 const controlPause = document.querySelectorAll(".audio-pause");
 const controlStop = document.querySelectorAll(".audio-stop");
-console.log(controlPlay.length)
 
 for (i = 0; i < controlPlay.length; i++) {
   controlPlay[i].addEventListener("click", audioPlay);
-  console.log(controlPlay[i]);
 };
 
 for (i = 0; i < controlPause.length; i++) {
@@ -103,16 +101,16 @@ function scrollIt(event) {
 let targetBtn = event.target.id;
 switch (targetBtn) {
   case "seasons-btn":
-    document.querySelector(".ww-the-story").scrollIntoView();
+    document.querySelector(".the-story").scrollIntoView();
     break;
   case "players-btn":
-    document.querySelector(".ww-the-players").scrollIntoView();
+    document.querySelector(".the-players").scrollIntoView();
     break;
   case "music-btn":
-    document.querySelector(".ww-the-music").scrollIntoView();
+    document.querySelector(".the-music").scrollIntoView();
     break;
   default:
-    document.querySelector(".ww-header").scrollIntoView();
+    document.querySelector(".header").scrollIntoView();
   }
 };
 

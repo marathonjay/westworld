@@ -1,4 +1,8 @@
 /*--------------------GLOBAL------------------------*/
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
 
 ul, h2 {
   list-style-type: none;
@@ -14,33 +18,37 @@ h1, h2, h3 {
   font-family: syncopate;
 }
 
+h3 {
+  text-align: center;
+}
+
 p, li  {
   font-family: arimo;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
 }
 
 p {
   line-height: 2.0;
   padding: 0px;
   margin: 0Px;
-  /* border: solid; */
 }
 
-button {
+button, .buy-dvd {
   font-family: syncopate;
   cursor: pointer;
   border-radius: 5px;
   background: #2a3439;
   color: white;
   padding: 5px;
-  /* margin-bottom: 20px; */
+  text-align: center;
 }
 
-html {
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-.ww-section-heading {
+.section-heading {
   text-align: center;
   font-family: syncopate;
   padding: 40px 0px;
@@ -55,6 +63,19 @@ html {
   margin-bottom: 50px;
 }
 
+.the-music, .the-story, .the-players{
+  width: 1200px;
+  margin: auto;
+}
+
+.parallax-image {
+  width: 100%;
+  height: 100vh; /* was 600px */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 #to-top {
   position: fixed;
   right: 15px;
@@ -63,128 +84,118 @@ html {
   padding: 15px;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
-  margin-bottom: 100px;
-}
-
-body {
-  /* background-image: linear-gradient(to bottom, #eddab2, #fff); */
-}
-
-.ww-the-music, .ww-the-story, .ww-the-players{
-  width: 1200px;
-  margin: auto;
-}
-
-.parallax-image {
-  width: 100%;
-  height: 100vh; /* was 600px */
-  /* border: solid; */
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  /* opacity: .5; */
-}
-
 /*--------------------HEADER------------------------*/
 
-.ww-header {
+.header {
     height: 100vh; 
     width: 100%;
     display: flex;
     align-items: center;
     padding-bottom: 100px;
     background-image: linear-gradient(to bottom, red, black);
-  }
+}
 
-  .ww-nav {
+.nav {
     width: 50%; 
-  }
+}
 
-  .ww-nav-content {
+.nav-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-  }
+}
 
-  .nav-btn {
+.nav-btn {
     margin-bottom: 20px;
     padding: 20px 30px 20px 30px;
-  }
+}
 
-  .container-nav-btns {
+.container-nav-btns {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-  }
+}
 
-  .ww-header-image-container {
+.header-image-container {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center; 
-  }
+}
 
-  .ww-header-image {
+.header-image {
     width: 65%;
     margin: 100px;
-  }
+}
 
-  .tagline {
+.tagline {
     font-family: syncopate;
     text-align: center;
-  }
+}
 
  /*--------------------PARALLAX------------------------*/
   
-  #parallax-image-1 {
+#parallax-image-1 {
     background-image: url("../../assets/images/westworld-rehoboam.jpg");
-  }
-  #parallax-image-2 {
+}
+
+#parallax-image-2 {
     background-image: url("../../assets/images/delos-logo2.jpg");
-  }
-  #parallax-image-3 {
+}
+
+#parallax-image-3 {
     background-image: url("../../assets/images/westworld-piano.jpg");
-  }
+}
 
  /*--------------------THE STORY------------------------*/
 
-  .ww-the-story {
-    /* background-image: linear-gradient(to top, #eddab2, #fff); */
+.the-story {
     border: 1px solid transparent;
-  }
+}
 
-  .dvd-thumbnail {
+.dvd-thumbnail {
     width: 200px; 
-    height: 100%;
-    margin: 15px;
-  }
+    /* height: 100%; */
+    /* margin: 15px; */
+}
 
-  .ww-story-content {
+.story-content {
+   background-image: linear-gradient(to bottom, #eddab2, #fff);
     /* border: solid; */
     /* width: 100%; */
     display: flex; 
+
     /* align-items: flex-start; */
     margin: 40px;
     box-shadow: 1px 5px 10px;
     border-radius: 5px;
-  }
+}
 
-  .ww-synopsis-container {
+.season-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.synopsis-container {
     width: 100%;
-  }
+}
 
-  .ww-synopsis {
-    padding: 0px 15px 0px 0px;
+.synopsis {
+    padding: 25px 15px 0px 0px;
     font-size: 16px;
-    width: 95%;
-    /* line-height: 2.0; */
     font-family: arimo;
-  }
+}
+
+.season-heading {
+  text-align: center;
+}
+
+.dvd-thumbnail, .buy-dvd-btn, .season-heading {
+  margin: 10px 0px;
+}
 
   /*--------------------THE PLAYERS------------------------*/
 
@@ -194,16 +205,16 @@ body {
   /* height: 100%; */
 }
 
-  .ww-cards-main-container {
+.cards-main-container {
     /* border: solid; */
     width: 75%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
     justify-items: center; 
     /* background: #a32d15; */
-  }
+}
 
-#ww-cast-container {
+#cast-container {
   /* padding:  50px 0px 0px 50px; */
   width: 25%;
   /* margin: 20px 0px 0px 15px; */
@@ -220,15 +231,15 @@ body {
   
 } */
 
-  .single-card-container {
+.single-card-container {
     margin: 25px;
     width: 200px;
     height: 275px;
     perspective: 1000px;
     cursor: pointer; 
-  }
+}
 
-  .ww-card {
+.card {
     width: 200px;
     height: 275px;
     border-radius: 10px;
@@ -238,9 +249,9 @@ body {
     backface-visibility: hidden;
     transition: .5s linear;
     box-shadow: 1px 5px 10px;    
-  }
+}
 
-  .card-front { 
+.card-front { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,43 +259,44 @@ body {
     background: #b5651e;  
     position: absolute; 
     /* border: solid; */
-  }
+}
 
-  .card-back {
+.card-back {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-size: cover;
     background-position: center; */
-  }
+}
 
-  .card-back-image {
+.card-back-image {
     width: 80%;
     height: 75%;
     object-fit: cover;
     /* border: solid; */ 
-  }
+}
 
-  .card-back-content {
+.card-back-content {
     /* border: solid; */
     /* width: 80%;
     height: 80%; */
-  }
+}
 
-  .character-name {
+.character-name {
     margin: 0px;
     padding: 0px 0px 12px 0px;
     font-weight: 700;
     /* border: solid; */
-  }
+}
 
-  .rotate-forward {
+.rotate-forward {
     transform: rotateY(180deg);
-  }
-  .rotate-back {
+}
+
+.rotate-back {
     transform: rotateY(-180deg);
-  }
+}
 
   /* .w-container { 
    display: flex;
@@ -293,24 +305,20 @@ body {
    border: solid;
   } */
 
-  .card-front-image-container {
+.card-front-image-container {
     width: 125px;
     height: 125px;
-  }
+}
 
-  .card-front-image {
+.card-front-image {
     object-fit: cover;
     object-position: center;
     width: 100%;
     height: 100%;
     border-radius: 100px;  
-  }
+}
   
   /*--------------------THE MUSIC------------------------*/
-
-h3 {
-  text-align: center;
-}
 
 .container-music-main {
   /* background-image: url("../../assets/images/westworld-piano.jpg"); */
@@ -387,6 +395,8 @@ h3 {
   object-fit: cover;
 }
 
+/*--------------------FOOTER------------------------*/
+
 footer {
   width: 100%;
   height: 500px;
@@ -394,10 +404,11 @@ footer {
   color: white;
 }
 
+
 /*--------------------MOBILE 768PX------------------------*/
 
 @media (max-width: 768px) {
-  .ww-the-music, .ww-the-story, .ww-the-players {
+  .the-music, .the-story, .the-players {
     width: 600px;
   }
 
@@ -406,7 +417,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  .ww-cards-main-container {
+  .cards-main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -415,14 +426,14 @@ footer {
     background-attachment: scroll; 
   }
 
-  .ww-header {
+  .header {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
 
-  .ww-header-image-container {
+  .header-image-container {
     width: 100%;
   }
 
@@ -431,11 +442,11 @@ footer {
     justify-content: center;
   }
 
-  #ww-cast-container {
+  #cast-container {
     width: 100%;
     text-align: center;
   }
-  .ww-cards-main-container {
+  .ards-main-container {
     width: 100%;
   }
 
@@ -461,11 +472,11 @@ footer {
 /*--------------------MOBILE 420PX------------------------*/
 
 @media (max-width: 420px) {
-  .ww-the-music, .ww-the-story, .ww-the-players {
+  .the-music, .the-story, .the-players {
     width: 100%;
   }
 
-  .ww-story-content {
+  .story-content {
     flex-direction: column;
     align-items: center;
   }
@@ -479,12 +490,12 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .ww-cards-main-container {
+  .cards-main-container {
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  .ww-header {
+  .header {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -500,13 +511,13 @@ footer {
     /* justify-content: center; */
   }
 
-  #ww-cast-container {
+  #cast-container {
     width: 100%;
     text-align: center;
     /* border: solid; */  
   }
 
-  .ww-cards-main-container {
+  .cards-main-container {
     width: 100%;
   }
 
