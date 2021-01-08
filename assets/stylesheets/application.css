@@ -17,8 +17,9 @@ p, li  {
 }
 p {
   line-height: 2.0;
-  /* padding: 0px;
-  margin: 0Px; */
+  padding: 0px;
+  margin: 0Px;
+  /* border: solid; */
 }
 button {
   font-family: syncopate;
@@ -39,16 +40,13 @@ html {
   padding: 40px 0px;
   color: black;
   border-bottom: 5px solid;
-  border-image: radial-gradient( black, white);
+  border-image: radial-gradient( red, white);
   border-image-slice: 1;
   /* theses border properties are for Safari, otherwise all borders were appearing.*/
   border-top: 0px solid transparent;  
   border-left: 0px solid transparent;
   border-right: 0px solid transparent;
-  
-  
-  
-
+  margin-bottom: 50px;
 }
 #to-top {
   position: fixed;
@@ -150,10 +148,7 @@ body {
   .ww-the-story {
     /* background-image: linear-gradient(to top, #eddab2, #fff); */
     border: 1px solid transparent;
-  }
-  
-  
-   
+  } 
   .dvd-thumbnail {
     width: 200px; 
     height: 100%;
@@ -316,6 +311,9 @@ body {
  /* ////////////////////////////
 //// SECTION-THE MUSIC  ////
 ///////////////////////////////  */
+h3 {
+  text-align: center;
+}
 
 
 .container-music-main {
@@ -323,44 +321,55 @@ body {
   /* background-size: cover;
   background-position: center; */
   display: flex;
-  border: solid;
+  /* border: solid; */
 }
 .container-songs {
   width: 75%;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 300px;
   /* margin: 20px 0px 20px 20px; */
   
 }
 .song-single {
-  
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #faf8cf;
+  
+  /* align-items: space-around; */
+  /* justify-content: center;
+  align-items: center; */
   /* background: red; */
   /* border: solid; */
-  /* height: 300px; */
+  /* height: 250px; */
   border-radius: 5px;
   box-shadow: 1px 5px 10px;
   /* font-family: syncopate; */
-  border: solid;
+  /* border: solid; */
 }
-.card-content {
-  width: 75%;
+/* h3 {
   border: solid;
-  background: #fff;
+  text-align: center;
+} */
+.card-content {
+  background: black;
   border-radius: 5px;
-  /* padding: 10px; */
-  /* margin: 10px; */
+  align-self: center;
+  margin-bottom: 40px;
+  color: white;
+
 }
 .audio-controls {
+  margin-top: 40px;
   /* display: flex; */
-  border: solid;
+  /* border: solid; */
+  /* align-self: end; */
 }
-.audio-play, .audio-pause, .audio-stop {
+/* .audio-play, .audio-pause, .audio-stop {
   margin-bottom: 10px;
-}
+} */
 .container-composer {
   max-width: 25%;
   margin: 20px 20px 0px 20px;
@@ -463,7 +472,7 @@ footer {
   }
   .ww-cards-main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .ww-header {
     display: flex;
