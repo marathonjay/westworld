@@ -119,4 +119,8 @@ for (i = 0; i < navBtns.length; i ++) {
   navBtns[i].addEventListener("click", scrollIt);
 };
 
+
+
+
+
 }); /*-----END OF DOM CONTENT LOADED EVENT----*/

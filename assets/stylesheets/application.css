@@ -287,9 +287,9 @@ button, .buy-dvd {
   
   /*--------------------THE MUSIC------------------------*/
 
-  .the-music {
-    margin-bottom: 50px;
-  }
+.the-music {
+  margin-bottom: 50px;
+}
 .container-music-main {
   display: flex;
 }
@@ -502,7 +502,6 @@ footer {
   }
 
   .container-music-main {
-    flex-direction: column;
   }
 
   .container-songs {
