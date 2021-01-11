@@ -23,10 +23,6 @@ p, li, .synopsis {
   font-family: arimo;
 }
 
-h2 {
-  /* font-size: 28px; */
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -40,7 +36,6 @@ p {
 }
 
 button, .buy-dvd {
-  /* font-family: syncopate; */
   cursor: pointer;
   border-radius: 5px;
   background: #2a3439;
@@ -51,9 +46,7 @@ button, .buy-dvd {
 
 .section-heading {
   text-align: center;
-  /* font-family: syncopate; */
   padding: 40px 0px;
-  /* color: #2a3439; */
   border-bottom: 5px solid;
   border-image: radial-gradient( red, white);
   border-image-slice: 1;
@@ -69,7 +62,6 @@ button, .buy-dvd {
   width: 1200px;
   margin: auto;
   margin-bottom: 100px;
-  /* border: solid; */
 }
 
 .parallax-image {
@@ -134,7 +126,6 @@ button, .buy-dvd {
 }
 
 .tagline {
-    /* font-family: syncopate; */
     text-align: center;
     color: black;
 }
@@ -154,10 +145,6 @@ button, .buy-dvd {
 }
 
  /*--------------------THE STORY------------------------*/
-
-/* .the-story {
-    border: 1px solid transparent;
-} */
 
 .dvd-thumbnail {
     width: 200px; 
@@ -185,7 +172,6 @@ button, .buy-dvd {
 .synopsis {
     padding: 25px 15px 0px 0px;
     font-size: 16px;
-    /* font-family: arimo; */
 }
 
 .season-heading {
@@ -202,26 +188,18 @@ button, .buy-dvd {
 
 #container-card-cast {
   display: flex;
-  /* border: solid; */
-  /* height: 100%; */
 }
 
 .cards-main-container {
-    /* border: solid; */
     width: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
     grid-gap: 20px;
     justify-items: center; 
-    /* background: #a32d15; */
 }
 
 #cast-container {
-  /* padding:  50px 0px 0px 50px; */
   width: 40%;
-  /* margin: 20px 0px 0px 15px; */
-  /* height: 100%; */
-  /* border: solid;   */
 }
 
 #cast-heading {
@@ -233,30 +211,25 @@ button, .buy-dvd {
 
 .cast-name {
   font-size: 20px;
-  margin: 20px 0px;
-  
+  margin: 20px 0px; 
 }
 
 #list-cast-character-container {
   display: flex;
-  /* border: solid; */
   justify-content: space-around;
 }
 
 .single-card-container {
-    /* margin: 25px; */
     width: 200px;
     height: 275px;
     perspective: 1000px;
     cursor: pointer; 
-    /* border: solid; */
 }
 
 .card {
     width: 200px;
     height: 275px;
     border-radius: 10px;
-  /*   border: solid; */
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -268,10 +241,8 @@ button, .buy-dvd {
     display: flex;
     justify-content: center;
     align-items: center;
-   
     background: #b5651e;  
     position: absolute; 
-    /* border: solid; */
 }
 
 .card-back {
@@ -279,28 +250,18 @@ button, .buy-dvd {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-size: cover;
-    background-position: center; */
 }
 
 .card-back-image {
     width: 80%;
     height: 75%;
     object-fit: cover;
-    /* border: solid; */ 
-}
-
-.card-back-content {
-    /* border: solid; */
-    /* width: 80%;
-    height: 80%; */
 }
 
 .character-name {
     margin: 0px;
     padding: 0px 0px 12px 0px;
     font-weight: 700;
-    /* border: solid; */
 }
 
 .rotate-forward {
@@ -310,13 +271,6 @@ button, .buy-dvd {
 .rotate-back {
     transform: rotateY(-180deg);
 }
-
-  /* .w-container { 
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;   
-   border: solid;
-  } */
 
 .card-front-image-container {
     width: 125px;
@@ -352,57 +306,28 @@ button, .buy-dvd {
   /* justify-content: center; */
 
   background-image: linear-gradient(to bottom, #eddab2, #fff);
-  /* align-items: space-around; */
-  /* justify-content: center;
-  align-items: center; */
-  /* background: red; */
-  /* border: solid; */
-  /* height: 250px; */
   border-radius: 5px;
   box-shadow: 1px 5px 10px;
-  /* font-family: syncopate; */
-  /* border: solid; */
 }
 
 .card-content {
-  /* background: black; */
-  /* margin-bottom: 20px; */
   border-radius: 5px;
-  
-  
-
 }
-
-/* h3 {
-  border: solid;
-  margin: 0px;
-  padding: 0px;
-} */
 
 .song-title {
-  /* margin-top: 10px; */
-  /* text-align: center; */
   height: 2em;
-  /* border: solid; */
   align-self: flex-start;
   margin-left: 20px;
-  
 }
-
-/* .song-details {
-  color: #2a3439;
-  
-} */
 
 .audio-controls {
  margin-top: 15px;
-
 }
 
 #about-composer {}
 .container-composer {
   max-width: 25%;
-  margin-left: 30px;
+  margin-top: 50px;
 }
 
 .container-image-composer {
@@ -429,31 +354,17 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* height: 500px; */
   background: black;
   color: white;
 }
-
-/* #footer-items {
-  display: flex;
-} */
 
 #hbo-link {
   font-family: arimo;
 }
 
-/* .footer-item:after {
-  content: "/";
-
-} */
-
 .footer-item {
   margin: 20px 0px;
 }
-
-
-
-
 
 /*--------------------MOBILE 768PX------------------------*/
 
@@ -465,7 +376,6 @@ footer {
   .season-info {
     justify-content: flex-start;
   }
-
 
   .container-songs {
     display: grid;
@@ -501,7 +411,7 @@ footer {
     width: 100%;
     text-align: center;
   }
-  .ards-main-container {
+  .cards-main-container {
     width: 100%;
   }
 
@@ -528,7 +438,7 @@ footer {
 
 @media (max-width: 420px) {
   .the-music, .the-story, .the-players {
-    width: 100%;
+    width: 300px;
   }
 
   
@@ -570,7 +480,7 @@ footer {
 
   #cast-container {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     /* border: solid; */  
   }
 
