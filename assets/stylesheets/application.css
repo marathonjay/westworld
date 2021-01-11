@@ -14,8 +14,9 @@ li {
   margin: 10px 0px;
 }
 
-h1, h2, h3, h4, button, a {
+h1, h2, h3, h4, button, a, p {
   font-family: syncopate;
+  color: #2a3439;
 }
 
 p, li, .synopsis {
@@ -52,7 +53,7 @@ button, .buy-dvd {
   text-align: center;
   /* font-family: syncopate; */
   padding: 40px 0px;
-  color: black;
+  /* color: #2a3439; */
   border-bottom: 5px solid;
   border-image: radial-gradient( red, white);
   border-image-slice: 1;
@@ -135,6 +136,7 @@ button, .buy-dvd {
 .tagline {
     /* font-family: syncopate; */
     text-align: center;
+    color: black;
 }
 
  /*--------------------PARALLAX------------------------*/
@@ -365,7 +367,6 @@ button, .buy-dvd {
 .card-content {
   /* background: black; */
   /* margin-bottom: 20px; */
-  color: white;
   border-radius: 5px;
   
   
@@ -385,18 +386,20 @@ button, .buy-dvd {
   /* border: solid; */
   align-self: flex-start;
   margin-left: 20px;
-}
-
-.song-details {
-  color: #2a3439;
   
 }
+
+/* .song-details {
+  color: #2a3439;
+  
+} */
 
 .audio-controls {
  margin-top: 15px;
 
 }
 
+#about-composer {}
 .container-composer {
   max-width: 25%;
   margin-left: 30px;
@@ -414,14 +417,42 @@ button, .buy-dvd {
   object-fit: cover;
 }
 
+.bio-subheading {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 12px 0px;
+}
+
 /*--------------------FOOTER------------------------*/
 
 footer {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
   background: black;
   color: white;
 }
+
+/* #footer-items {
+  display: flex;
+} */
+
+#hbo-link {
+  font-family: arimo;
+}
+
+/* .footer-item:after {
+  content: "/";
+
+} */
+
+.footer-item {
+  margin: 20px 0px;
+}
+
+
+
 
 
 /*--------------------MOBILE 768PX------------------------*/
