@@ -327,7 +327,8 @@ button, .buy-dvd {
 #about-composer {}
 .container-composer {
   max-width: 25%;
-  margin-top: 50px;
+  margin-left: 20px;
+  
 }
 
 .container-image-composer {
@@ -358,8 +359,19 @@ footer {
   color: white;
 }
 
-#hbo-link {
+.link {
   font-family: arimo;
+  font-size: 18px;
+}
+
+.link: hover {
+  text-decoration: underline;
+}
+
+#footer-list {
+  /* display: flex; */
+  font-size: 18px;
+  margin: 0px 20px;
 }
 
 .footer-item {
@@ -426,11 +438,26 @@ footer {
   }
   .container-composer {
    max-width: 100%;
+   margin-top: 50px;
   }
 
   #to-top {
     font-size: 14px;
     padding: 10px;
+  }
+
+  #footer-list {
+    /* display: flex; */
+    font-size: 18px;
+    margin: 0px 20px;
+  }
+
+  footer {
+    justify-content: flex-start;
+  }
+  
+  .footer-item {
+    margin: 20px 0px;
   }
 }
 
