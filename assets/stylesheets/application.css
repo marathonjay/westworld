@@ -1,7 +1,6 @@
 /*--------------------GLOBAL------------------------*/
 html {
   scroll-behavior: smooth;
-  /* -webkit-overflow-scrolling: touch; */
 }
 
 ul, h2 {
@@ -63,6 +62,7 @@ button, .buy-dvd {
   margin: auto;
   margin-bottom: 100px;
 }
+
 
 .parallax-image {
   width: 100%;
@@ -153,7 +153,7 @@ button, .buy-dvd {
 .story-content {
   background-image: linear-gradient(to bottom, #eddab2, #fff);
   display: flex; 
-  margin: 40px;
+  margin: 40px 0px;
   box-shadow: 1px 5px 10px;
   border-radius: 5px;
 }
@@ -287,6 +287,9 @@ button, .buy-dvd {
   
   /*--------------------THE MUSIC------------------------*/
 
+  .the-music {
+    margin-bottom: 50px;
+  }
 .container-music-main {
   display: flex;
 }
@@ -303,15 +306,9 @@ button, .buy-dvd {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-
   background-image: linear-gradient(to bottom, #eddab2, #fff);
   border-radius: 5px;
   box-shadow: 1px 5px 10px;
-}
-
-.card-content {
-  border-radius: 5px;
 }
 
 .song-title {
@@ -328,7 +325,6 @@ button, .buy-dvd {
 .container-composer {
   max-width: 25%;
   margin-left: 20px;
-  
 }
 
 .container-image-composer {
@@ -364,43 +360,33 @@ footer {
   font-size: 18px;
 }
 
-.link: hover {
+.link:hover {
   text-decoration: underline;
 }
 
 #footer-list {
-  /* display: flex; */
-  font-size: 18px;
   margin: 0px 20px;
 }
 
 .footer-item {
   margin: 20px 0px;
+  font-size: 18px;
 }
 
 /*--------------------MOBILE 768PX------------------------*/
 
 @media (max-width: 768px) {
   .the-music, .the-story, .the-players {
-    width: 600px;
-  }
-
-  .season-info {
-    justify-content: flex-start;
-  }
-
-  .container-songs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .cards-main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 650px;
   }
 
   .parallax-image {
     background-attachment: scroll; 
+  }
+
+  #to-top {
+    font-size: 14px;
+    padding: 10px;
   }
 
   .header {
@@ -414,6 +400,16 @@ footer {
     width: 100%;
   }
 
+  .season-info {
+    justify-content: flex-start;
+  }
+  
+  .cards-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
   #container-card-cast {
     flex-direction: column;
     justify-content: center;
@@ -421,41 +417,41 @@ footer {
 
   #cast-container {
     width: 100%;
-    text-align: center;
-  }
-  .cards-main-container {
-    width: 100%;
-  }
-
-  .container-songs {
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    margin: 0px;    
+    /* text-align: center; */
+    margin-bottom: 20px;
   }
 
   .container-music-main {
     flex-direction: column;
   }
+ 
+  .container-songs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container-songs {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #image-composer {
+    width: 50%;
+  }
+
   .container-composer {
    max-width: 100%;
    margin-top: 50px;
-  }
-
-  #to-top {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  #footer-list {
-    /* display: flex; */
-    font-size: 18px;
-    margin: 0px 20px;
   }
 
   footer {
     justify-content: flex-start;
   }
   
+  #footer-list {
+    font-size: 18px;
+    margin: 0px 20px;
+  }
+
   .footer-item {
     margin: 20px 0px;
   }
@@ -468,25 +464,13 @@ footer {
     width: 300px;
   }
 
-  
-
-  .story-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .parallax-image {
     display: none;
   }
 
-  .container-songs {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .cards-main-container {
-    display: grid;
-    grid-template-columns: 1fr;
+  #to-top {
+    font-size: 10px;
+    padding: 5px;
   }
 
   .header {
@@ -496,45 +480,43 @@ footer {
     justify-content: center;
   }
 
-  /* .ww-header-image-container {
-    width: 100%;
-  } */
-
-  #container-card-cast {
+  .story-content {
     flex-direction: column;
-    /* justify-content: center; */
+    align-items: center;
   }
 
-  #cast-container {
-    width: 100%;
-    /* text-align: center; */
-    /* border: solid; */  
+  .synopsis {
+    padding: 15px;
   }
 
   .cards-main-container {
-    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  #container-card-cast {
+    flex-direction: column;
+  }
+
+  .cast-name {
+    font-size: 16px;
+  }
+
+  .container-music-main {
+    flex-direction: column;
   }
 
   .container-songs {
-    width: 100%;
     grid-template-columns: 1fr;
-    /* border: solid; */
-    margin: 0px;
-    /* grid-gap: 0px; */
-  }
-  
-  .container-music-main {
-    flex-direction: column;
   }
 
   .container-composer {
    max-width: 100%;
   }
 
-  #to-top {
-    font-size: 10px;
-    padding: 5px;
+  .footer-item, .link {
+    font-size: 14px;
   }
+  
 }
 
 
