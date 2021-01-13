@@ -1,8 +1,8 @@
-# Final Project Title
+# Westworld Fan site
 
 ## Introduction
 
-This is the introduction to my final project yadda yadda 
+I'm a fan of the HBO series Westworld and decided I would build a simple fan site for my final project in the front end web development class I recently completed.
 
 ## Another Heading
 
